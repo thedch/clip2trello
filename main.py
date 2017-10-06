@@ -42,7 +42,6 @@ for trello_list in response_array_of_dict:
 file = open('paste.txt', 'r')
 name = file.read()
 
-# name = 'Card via the API'
 description = 'I made this card using the Trello API :fist:'
 cards_url = base + 'cards'
 
