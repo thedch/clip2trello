@@ -11,6 +11,7 @@ clipboard to a specified Trello list. Loosely based on [this repo.](https://gith
 1. Download the [paste utility](http://www.c3scripts.com/tutorials/msdos/paste.html)
 1. Per the instructions, place paste.exe in `C:\Windows\System32`
 1. Set up an AutoHotKey (or similar) shortcut to:
-  * Copy the contents of the clipboard to a file using the Paste utility
+  * Copy the contents of the clipboard to a file using the paste utility
   * Run `main.py` to create the card on the board and list of your choice
   * Remove the file
+  * (see `example.ahk` for how to do this)
