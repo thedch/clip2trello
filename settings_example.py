@@ -8,10 +8,6 @@
 trello_key = ''
 trello_token = ''
 
-# This is the path that the paste utility is storing files at. It's the user's
-# choice -- I recommend using the same path as this file for simplicity.
-paste_path = ''
-
 # Name of desired Trello board to place cards in. Case sensitive.
 board_name = ''
 
