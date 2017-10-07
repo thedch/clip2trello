@@ -2,6 +2,8 @@ import requests           # a 3rd party library. I installed via `pip install re
 import json               # all responses from Trello come back as JSON, so have your favorite JSON library handy
 from pprint import pprint # this is a handy utility for printing dictionaries in a human readable way
 import settings
+import os
+import sys
 
 key = settings.trello_key
 token = settings.trello_token
@@ -39,14 +41,13 @@ for trello_list in response_array_of_dict:
   if trello_list['name'] == list_name:
     list_id = trello_list['id']
 
-file = open('paste.txt', 'r')
+# Absolute path to avoid relative issues
+file = open(os.path.join(os.path.dirname(sys.argv[0]), 'paste.txt'), 'r')
 name = file.read()
 
-description = 'I made this card using the Trello API :fist:'
 cards_url = base + 'cards'
 
-arguments = {'name': name,
-             'desc': description,
+arguments = {'name': name,             
              'idList' : list_id}
 
 response = requests.post(cards_url, params=params_key_and_token, data=arguments)
