@@ -11,5 +11,5 @@ trello_token = ''
 # Name of desired Trello board to place cards in. Case sensitive.
 board_name = ''
 
-# Name of desired Trello board to place cards in. Case sensitive.
+# Name of desired Trello list to place cards in. Case sensitive.
 list_name = ''
