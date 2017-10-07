@@ -1,5 +1,4 @@
 settings.py
 settings.pyc
+paste.txt
 *.pyc
-out/*
-.DS_Store
