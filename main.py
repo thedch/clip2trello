@@ -3,6 +3,7 @@ import json               # all responses from Trello come back as JSON, so have
 import settings
 import os
 import sys
+import easygui
 
 url = settings.webooks_url
 
@@ -12,4 +13,7 @@ copied_data = file.read()
 
 payload = {'text': copied_data}
 
-requests.post(url, data=json.dumps(payload))
+try:
+    requests.post(url, data=json.dumps(payload))
+except:
+    easygui.msgbox("ERROR: Could not reach webhook. Are you connected to the internet?")
