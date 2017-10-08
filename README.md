@@ -1,13 +1,13 @@
 # clip2trello
 
 A program I created for a friend to send the current contents of the Windows
-clipboard to a specified Trello list. Some Trello API code inspired by
-[this repo.](https://github.com/bmccormack/trello-python-demo)
+clipboard to a specified Zapier webhook.
 
 ## Install
 
 1. Download this repo
-1. Retrieve your [Trello API key and token](https://trello.com/1/appKey/generate), save them in `settings.py`
+1. Place a Zapier webhook link (info [here](https://zapier.com/zapbook/webhook/))
+    in `settings.py` (see `settings_example.py`)
 1. Download this [paste utility](http://www.c3scripts.com/tutorials/msdos/paste.html)
 1. Per the instructions at that link, place paste.exe in `C:\Windows\System32`
 1. Download the latest [Python 3](https://www.python.org/downloads/) if you
